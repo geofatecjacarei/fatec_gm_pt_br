@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./logo/GM_2.png">
+    <title>WebSIG GM Fruit Farm</title>
+    <style>
+        @font-face {
+            font-family: 'fonte topo';
+            src: url('fonte/Tahoma Regular font.ttf');
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .topo {
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            position: absolute;
+            top: 10%;
+            left: 56.5%;
+            transform: translate(-50%, -50%);
+            width: 86%;
+            height: 65px;
+            z-index: 11;
+        }
+
+        .topo::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("imagens/Novo Projeto (1).png");
+            background-size: cover;
+            opacity: 0.7;
+            z-index: -1;
+        }
+
+        .topo .conteudo p {
+            font-size: 25px;
+            text-align: center;
+            font-family: 'fonte topo';
+            font-weight: normal;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .esquerda {
+            width: 175px;
+            background-image: url("imagens/background.png");
+            box-sizing: border-box;
+            height: 100vh;
+        }
+
+        .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 175px;
+            right: 0;
+            bottom: 0;
+            z-index: 9;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        .div-sobreposta {
+            position: absolute;
+            top: 50%;
+            left: 7%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 850px;
+            background-image: url("imagens/Novo Projeto.png");
+            background-position: center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            width: 100%;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        .texto-superior {
+            font-size: 15px;
+            font-family: "Poppins", sans-serif;
+            margin-top: 40px;
+        }
+
+        .texto-inferior {
+            font-size: 10px;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 40px;
+            margin-left: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="esquerda">
+        <!-- Conteúdo da div esquerda -->
+    </div>
+
+    <div class="conteudo">
+        <div class="topo">
+            <div class="conteudo">
+                <p>WebSIG para Mapeamento e Monitoramento das Espécies Arbóreas no Pomar da General Motors <br> São José dos Campos - SP</p>
+            </div>
+        </div>
+
+        <div class="iframe-container">
+            <iframe src="mapa/websig/websig.html" title="Iframe Exemplo"></iframe>
+        </div>
+    </div>
+
+    <!-- Div sobreposta -->
+    <div class="div-sobreposta">
+        <p class="texto-superior">DESENVOLVIDO POR:</p>
+        <div class="logo">
+            <img src="logo/Fatec.png" alt="Logo Fatec">
+            <img src="logo/GM.png" alt="Logo GM">
+            <img src="logo/GM_2.png" alt="Logo GM 2">
+            <img src="logo/Logo_Geo.png" alt="Logo Geo">
+            <img src="logo/Logo_MA.png" alt="Logo MA">
+        </div>
+        <p class="texto-inferior">ESSE WEBSITE FOI CRIADO E MANTIDO POR ALUNOS<br> DO CURSO DE GEOPROCESSAMENTO DA FATEC DE<br> JACAREÍ © 2024 || ALL RIGHTS RESERVED</p>
+    </div>
+
+</body>
+</html>
