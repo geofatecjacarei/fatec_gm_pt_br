@@ -876,7 +876,7 @@ var layerSwitcher = new ol.control.LayerSwitcher({
 	startActive: true,
 	tipLabel: "Layers",
     target: 'top-right-container',
-	collapseLabel: 'Descrição das camadas (legenda) »',
+	collapseLabel: 'LEGENDA | LISTA DE CAMADAS »',
 	collapseTipLabel: 'Fechar'
     });
 map.addControl(layerSwitcher);
